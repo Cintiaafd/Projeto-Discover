@@ -37,6 +37,7 @@ body {
  *Dá para agrupar todo o código acima em uma única unidade que é o background: color image repeat position/size . É um atralho para todo o código acima.
  */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -173,4 +174,15 @@ footer {
   padding: 24px;
   text-align: center;
   font-size: 14px;
+}
+
+/*Media queries -> regras de media*/
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
